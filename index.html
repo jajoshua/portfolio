@@ -11,12 +11,15 @@
 			gtag('js', new Date());
 			gtag('config', 'UA-138004564-1');
 		</script>
+		<title>Jason Joshua</title>
+		<link rel="icon" type="image/png" href="icon2.png">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Roboto:700" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style>
 			*{
 				margin: 0;
 				padding: 0;
-				font-family: 'Helvetica';
+				font-family: 'Playfair Display', 'Helvetica';
 			}
 
 			
@@ -31,9 +34,17 @@
 					opacity: 1;
 				}
 			}
+			@keyframes rotate{
+				from{
+					transform: rotateZ(-1260deg) translateY(200vh);
+				}
+				to{
+					transform: rotateZ(0deg) translateY(0);
+				}
+			}
 			.container{
 				display: grid;
-				grid-template-columns: 70% auto;
+				grid-template-columns: 55% auto;
 				width: 100vw;
 				height: 100vh;
 			}
@@ -47,10 +58,15 @@
 				animation-fill-mode: forwards;
 			}
 			.right{
-				background-image: url("photo2.jpg");
+				background-image: url("photoSLANT.png");
 				background-size: cover;
 				background-repeat: no-repeat;
 				background-position: center;
+				/*
+				animation-name: rotate;
+				animation-duration: 2000ms;
+				animation-fill-mode: forwards;
+				*/
 			}
 
 			h1{
@@ -59,6 +75,7 @@
 			h2{
 				font-size: 1em;
 				color: #b3b3b3;
+				font-family: 'Roboto';
 			}
 
 			.links{
@@ -89,12 +106,14 @@
 				align-items: center;
 
 				transition-duration: 300ms;
-			}
-			.button{
+		
 				color: white;
 				user-select: none;
-				font-size: 0.7em;
+				font-size: 0.8em;
 				text-decoration: none;
+
+				font-family: 'Roboto';
+				font-weight: 700;
 			}
 			a{
 				text-decoration: none;
@@ -104,6 +123,7 @@
 				.button:hover{
 					opacity: 0.7;
 					width: 140px;
+					letter-spacing: 1px;
 				}
 			}
 
@@ -134,7 +154,11 @@
 				<h1>Jason Joshua</h1>
 				<h2>Mechanical Design Engineer</h2>
 				<div class="links">
-					<a id="link" href="portfolio.pdf" type="application/pdf"><div class="button">Portfolio</div></a>
+
+					<a id="link" href="portfolio.pdf" type="application/pdf">
+						<div class="button">Portfolio</div>
+					</a>
+
 					<a id="link" href="resume.pdf" type="application/pdf"><div class="button">Resume</div></a>
 				</div>
 			</div>
